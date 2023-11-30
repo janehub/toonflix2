@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 2,
-        title: Text(
+        title: const Text(
           "Today's 웹툰",
           style: TextStyle(
             fontSize: 24,
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
           if (snapshot.hasData) {
             return Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 Expanded(
@@ -53,7 +53,7 @@ class HomeScreen extends StatelessWidget {
     return ListView.separated(
       scrollDirection: Axis.horizontal,
       itemCount: snapshot.data!.length,
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         vertical: 10,
         horizontal: 20,
       ),

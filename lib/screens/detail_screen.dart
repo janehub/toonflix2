@@ -37,7 +37,7 @@ class _DetailScreenState extends State<DetailScreen> {
         elevation: 2,
         title: Text(
           widget.title,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.w400,
           ),
@@ -47,7 +47,7 @@ class _DetailScreenState extends State<DetailScreen> {
       ),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Row(
@@ -63,7 +63,7 @@ class _DetailScreenState extends State<DetailScreen> {
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 15,
-                          offset: Offset(10, 10),
+                          offset: const Offset(10, 10),
                           color: Colors.black.withOpacity(0.5),
                         )
                       ]),
@@ -78,6 +78,41 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
             ],
           ),
+          const SizedBox(
+            height: 10,
+          ),
+          FutureBuilder(
+              future: webtoon,
+              builder: (context, snapshot) {
+                if (snapshot.hasData) {
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 50,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          snapshot.data!.about,
+                          style: const TextStyle(
+                            fontSize: 16,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        Text(
+                          '${snapshot.data!.genre} / ${snapshot.data!.age}',
+                          style: const TextStyle(
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }
+                return const Text('...');
+              })
         ],
       ),
     );
