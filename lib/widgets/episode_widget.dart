@@ -46,6 +46,8 @@ class Episode extends StatelessWidget {
                   color: Colors.green.shade300,
                   fontSize: 16,
                 ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
               Icon(
                 Icons.chevron_right,
