@@ -1,17 +1,12 @@
 # toonflix2
 
-A new Flutter project.
+네이버 웹툰 중에서 오늘 날짜만 불러와서 보여주는 앱
 
-## Getting Started
+## toonflix2
+노마드 코더 (https://nomadcoders.co/courses) 사이트 강의에 있는 내용 스터디
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# toonflix2
+## Development Tool & Skills
+Framework : Flutter
+Language : Dart
+외부 패키지 : Http (Api), Html (문자열 파서)
+Api 사용 (노마드 코더 제공)
