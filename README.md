@@ -11,7 +11,7 @@
 노마드 코더 (https://nomadcoders.co/courses) 사이트 강의에 있는 내용 스터디
 
 ## Development Tool & Skills
-Framework : Flutter
-Language : Dart
-외부 패키지 : Http (Api), Html (문자열 파서)
-Api 사용 (노마드 코더 제공)
+1. Framework : Flutter
+2. Language : Dart
+3. 외부 패키지 : Http (Api), Html (문자열 파서)
+4. Api 사용 (노마드 코더 제공)
